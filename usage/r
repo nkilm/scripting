@@ -1,0 +1,16 @@
+#! /usr/bin/bash
+
+echo "generating requirements.txt"
+
+# res=$(pip -V)
+
+# echo "$res"
+
+# if [ "$res" == "pip 22.0.3 from C:\Users\Nikhil\AppData\Local\Programs\Python\Python310\lib\site-packages\pip (python 3.10)" ]; then
+#     echo "Venv is not activated"
+#     return 1
+# else 
+#     echo "Activated"
+# fi 
+
+pip freeze > requirements.txt
