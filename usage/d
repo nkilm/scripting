@@ -1,0 +1,6 @@
+#! /usr/bin/bash
+
+type=$1
+echo -e "listing files of type $type\n"
+
+find . -name "*.$type" -type f -delete
