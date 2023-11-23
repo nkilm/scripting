@@ -1,3 +1,0 @@
-#! /usr/bin/bash
-
-ipconfig | grep "IPv4" | awk '{print $14}'

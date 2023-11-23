@@ -1,9 +1,0 @@
-#! /usr/bin/bash
-
-name=$1
-
-wifi=$(netsh wlan show profiles name="$name" key=clear | grep "Name" | awk '{$1=$2="";print $0}')
-pass=$(netsh wlan show profiles name="$name" key=clear | grep "Key" | awk '{$1=$2=$3="";print $0}')
-
-echo  "$wifi"
-echo  "$pass"
